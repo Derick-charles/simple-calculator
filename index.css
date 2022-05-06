@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content:center;
+    background-image: radial-gradient(circle,#361515,#780b0b,#700505);
+    box-sizing: border-box;
+    background-repeat: cover;
+}
+#calculator{
+    margin-top: 40px;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 350px;
+    height: 580px;
+    background-color: black;
+    box-shadow:8px 8px 14px #420400,-4px -4px 16px #680600;
+    position: relative;
+}
+#screen{
+    font-size:60px;
+    text-align: right;
+    color: red;
+}
+#screen input{
+    padding:10px;
+    width: 93%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 10px;
+    border-color:transparent;
+    margin-left: 2px;
+    margin-top: 2px;
+    text-align: right;
+    font-size:60px;
+    color: rgb(242, 13, 13);
+    background-color: black;
+    position: relative;
+}
+#btn-area{
+    padding: 5px;
+    position: absolute;
+    top: 100px;
+}
+#btn-area .numbers{
+    display:grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-column-gap:2.5em;
+    grid-row-gap:0.5em;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#btn-area .numbers input{
+    list-style:none;
+    border: solid ;
+    border-radius:10px;
+    border-width:1px;
+    width: 80px;
+    text-align: center;
+    font-size:40px;
+    font-weight: bold;
+    color: red;
+    padding:5px;
+    cursor: pointer;
+    background-color: black;
+}
+#btn-area ul li:active{
+    color:white;
+    background-color:red;
+    border-color:transparent;
+}
